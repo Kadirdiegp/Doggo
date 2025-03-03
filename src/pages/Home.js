@@ -32,7 +32,7 @@ const HeroSection = styled(Section)`
   
   @media (max-width: 768px) {
     min-height: 80vh;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
 `;
@@ -46,6 +46,7 @@ const HeroContent = styled(Container)`
   
   @media (max-width: 768px) {
     padding: 0 16px;
+    margin-top: 20px;
   }
 `;
 
@@ -63,6 +64,7 @@ const HeroTitle = styled.div`
   
   @media (max-width: 768px) {
     margin-bottom: 1.5rem;
+    margin-top: 10px;
     
     .hero-image {
       border-radius: 20px;

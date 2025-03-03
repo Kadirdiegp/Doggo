@@ -11,8 +11,12 @@ const PageContainer = styled.div`
 
 const MainContent = styled.main`
   flex-grow: 1;
-  padding-top: 20px;
+  padding-top: 80px; /* Increased from 20px to create more space below navigation */
   padding-bottom: 40px;
+  
+  @media (max-width: 768px) {
+    padding-top: 100px; /* Even more space on mobile */
+  }
 `;
 
 const Layout = ({ children }) => {
