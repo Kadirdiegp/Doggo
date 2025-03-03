@@ -9,6 +9,11 @@ const GlobalStyles = createGlobalStyle`
     --light-color: #ffffff;
     --grey-color: #555;
     --light-grey: #f8f9fa;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
   }
 
   * {
@@ -22,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     color: var(--text-color);
     background-color: var(--background-color);
+    overflow-x: hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -41,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
   
   img {
     max-width: 100%;
+    display: block;
   }
   
   a {
@@ -49,6 +56,29 @@ const GlobalStyles = createGlobalStyle`
     
     &:hover {
       text-decoration: underline;
+    }
+  }
+  
+  /* Mobile-specific adjustments */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+    
+    section {
+      padding: var(--spacing-lg) var(--spacing-md);
     }
   }
   
@@ -169,7 +199,7 @@ const GlobalStyles = createGlobalStyle`
   .card {
     background-color: var(--light-color);
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--card-shadow);
     overflow: hidden;
   }
   

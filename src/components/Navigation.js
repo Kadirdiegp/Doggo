@@ -16,6 +16,10 @@ const NavContainer = styled.nav`
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+  
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 `;
 
 const NavContent = styled.div`
@@ -26,6 +30,11 @@ const NavContent = styled.div`
   margin: 0 auto;
   padding: 0 20px;
   height: 60px;
+  
+  @media (max-width: 768px) {
+    height: 50px;
+    padding: 0 16px;
+  }
 `;
 
 const Logo = styled(Link)`
@@ -39,6 +48,14 @@ const Logo = styled(Link)`
   img {
     height: 40px;
     margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    
+    img {
+      height: 32px;
+    }
   }
 `;
 
@@ -154,6 +171,11 @@ const MobileMenu = styled.div`
   flex-direction: column;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   
+  @media (max-width: 480px) {
+    width: 85%;
+    padding: 80px 30px;
+  }
+  
   a {
     color: var(--text-color);
     text-decoration: none;
@@ -165,6 +187,11 @@ const MobileMenu = styled.div`
     &:hover, &.active {
       color: var(--primary-color);
       padding-left: 10px;
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 1.1rem;
+      padding: 12px 0;
     }
   }
 `;

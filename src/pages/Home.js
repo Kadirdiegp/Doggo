@@ -32,6 +32,8 @@ const HeroSection = styled(Section)`
   
   @media (max-width: 768px) {
     min-height: 80vh;
+    padding-top: 60px;
+    padding-bottom: 40px;
   }
 `;
 
@@ -41,6 +43,10 @@ const HeroContent = styled(Container)`
   align-items: center;
   text-align: center;
   padding: 0 20px;
+  
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
 `;
 
 const HeroTitle = styled.div`
@@ -53,6 +59,14 @@ const HeroTitle = styled.div`
     width: 100%;
     height: auto;
     border-radius: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    margin-bottom: 1.5rem;
+    
+    .hero-image {
+      border-radius: 20px;
+    }
   }
 `;
 
@@ -69,6 +83,8 @@ const Subtitle = styled.div`
     
     @media (max-width: 768px) {
       font-size: 2.5rem;
+      margin-bottom: 1rem;
+      padding: 0 10px;
     }
   }
   
@@ -76,6 +92,17 @@ const Subtitle = styled.div`
     font-size: 1.2rem;
     line-height: 1.8;
     color: var(--text-color);
+    
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      padding: 0 15px;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
   }
 `;
 
@@ -87,6 +114,9 @@ const CTASection = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
+    gap: 15px;
+    margin-top: 1rem;
+    padding: 0 10px;
   }
 `;
 
