@@ -161,7 +161,7 @@ const MobileMenuButton = styled.button`
 const MobileMenu = styled.div`
   position: fixed;
   top: 0;
-  right: ${props => props.$isOpen ? '0' : '-70%'};
+  right: ${props => props.$isOpen ? '0' : '-100%'};
   width: 70%;
   height: 100vh;
   background-color: white;
@@ -208,6 +208,7 @@ const Overlay = styled.div`
   visibility: ${props => props.$isOpen ? 'visible' : 'hidden'};
   opacity: ${props => props.$isOpen ? '1' : '0'};
   transition: all 0.3s ease;
+  pointer-events: ${props => props.$isOpen ? 'auto' : 'none'};
 `;
 
 const Navigation = () => {
