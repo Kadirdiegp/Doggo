@@ -11,3 +11,121 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  /* Primary design colors */
+  --primary-color: #9370ff; /* Purple */
+  --secondary-color: #FFD700; /* Yellow */
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --light-purple: rgba(147, 112, 255, 0.1);
+  --dark-purple: #7554db;
+  --light-yellow: rgba(255, 215, 0, 0.2);
+  --dark-yellow: #e6c200;
+  
+  /* UI colors */
+  --error-color: #ff4d4d;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+  
+  /* Gradients */
+  --primary-gradient: linear-gradient(135deg, var(--primary-color), var(--dark-purple));
+  --secondary-gradient: linear-gradient(135deg, var(--secondary-color), var(--dark-yellow));
+  
+  /* Shadows */
+  --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  --hover-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  --button-shadow: 0 4px 8px rgba(147, 112, 255, 0.2);
+  
+  /* Transitions */
+  --transition-speed: 0.3s;
+  --transition-function: ease;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color var(--transition-speed) var(--transition-function);
+}
+
+a:hover {
+  color: var(--dark-purple);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Common buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-align: center;
+  transition: all var(--transition-speed) var(--transition-function);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: var(--button-shadow);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-purple);
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+.btn-secondary:hover {
+  background-color: var(--dark-yellow);
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}

@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Dog Protection Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive, responsive, and user-friendly website focused on dog protection and welfare.
+
+## Project Overview
+
+This website aims to provide a platform for dog lovers, potential adopters, and donors to learn about dog welfare, find dogs available for adoption, and support the cause through donations and volunteering.
+
+## Features
+
+- **Home Page**: Showcases the organization's mission with featured dogs and key statistics
+- **About Us**: Details about the organization, team members, and success stories
+- **Adoption Gallery**: Filterable gallery of dogs available for adoption with individual profiles
+- **Resources**: Educational materials including care guides, articles, and FAQs
+- **Donation**: Options to donate, sponsor a dog, or volunteer
+- **Contact**: Contact form, location information, and social media links
+
+## Technology Stack
+
+- **Frontend**: React.js with React Router and styled-components
+- **UI Framework**: Custom styling with reusable components
+- **Responsiveness**: Mobile-first approach with responsive design
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+
+### Installation
+
+1. Clone the repository
+   ```
+   git clone <repository-url>
+   ```
+
+2. Install dependencies
+   ```
+   cd dog-protection-website
+   npm install
+   ```
+
+3. Start the development server
+   ```
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the website in your browser
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- **`npm start`**: Runs the app in development mode
+- **`npm test`**: Launches the test runner
+- **`npm run build`**: Builds the app for production
+- **`npm run eject`**: Ejects from Create React App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+dog-protection-website/
+├── public/               # Public assets
+├── src/                  # Source code
+│   ├── components/       # Reusable components
+│   ├── pages/            # Page components
+│   ├── styles/           # Global styles
+│   ├── App.js            # Main App component
+│   └── index.js          # Entry point
+└── README.md             # This file
+```
 
-### `npm test`
+## Design Philosophy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Warm, friendly color palette
+- Clear typography for readability
+- Emotional but positive imagery
+- Intuitive navigation with prominent call-to-action buttons
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is licensed under the MIT License.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
